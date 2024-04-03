@@ -1,0 +1,104 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Collaborating Quantumly: An Interactive Workshop on the Foundations of Quantum Computing (Instructor's notes)}
+
+\begin{document}
+\maketitle
+
+Get ready to make your students Quantum Curious! This workshop introduces students to foundational Quantum Computing tools through collaborative active learning.
+\\
+Over the course of the workshop, your students will
+\begin{itemize}
+    \item become comfortable with using basic Quantum Computing jargon
+    \item learn how to design basic quantum systems that display quantum behaviour
+    \item learn the basic mathematics behind the magic of Quantum Computing
+\end{itemize}
+
+\newline \newline
+
+More specifically, the topics that this workshop will cover are
+\begin{itemize}
+    \item qubits
+    \item superposition
+    \item entanglement
+    \item quantum computer hardware limitations
+    \item Dirac notation
+    \item Matrix notation
+    \item Foundational Linear Algebra
+\end{itemize}
+
+\section{Target Audience}
+
+The target audiences for this workshop are late high school students who are interested in STEM as well as early undergraduate STEM students. While a basic knowledge of Python and Linear Algebra would be 'nice to have,' these skills aren't required.
+
+\section{Activity 0: Find Your Partner}
+
+Although this activity is optional, we encourage you to use it to help your students pair up as well as learn how to discuss the basics of quantum systems.
+
+After giving a basic introduction of one-qubit quantum systems, give each student a piece of a quantum system. The student they'll be working with throughout the workshop holds the corresponding piece of their quantum system
+
+Some example components include
+
+\begin{itemize}
+    \item $1|0\rangle$ and $0|1\rangle$
+    \item $0|0\rangle$ and $1|1\rangle$
+    \item $1/\sqrt{2} |0\rangle$ and $1/\sqrt{2} |1\rangle$
+    \item $1/2 |0\rangle$ and $\sqrt{3}/2 |1\rangle$
+\end{itemize}
+
+\section{Activity 1: Hopping Through Hoops and Clouds}
+
+After giving a lesson on multiple-qubit quantum systems, introduce \href{https://quantumcurious.org/misty-states/}{Misty States} and \href{https://quantum.ibm.com/composer/files/new}{IBM Composer}. Assign each partner one of the tools. Give the students 5-10 minutes to become familiar with the tools. Students should not communicate with each other \textit{too much} during this time.
+
+After students have explored their respective tools, hand every student a few descriptions of simple quantum systems. Have the students 
+
+\begin{enumerate}
+    \item Create the quantum system in their application
+    \item Describe the quantum system to their partner and have them create it in their application
+    \item Switch applications and use different quantum systems
+\end{enumerate}
+
+After completing the process above a couple of times, have the pairs compare and contrast their results as well as the tools themselves. If time permits, have them document how to convert between the two tools.
+
+This activity allows students to practice communicating about quantum concepts. It also demonstrates the difficulties that come along with converting between different frameworks, which demonstrates the difficulty of converting between different quantum hardware.
+
+Some example quantum systems have been included below
+\begin{itemize}
+    \item Any of the \href{https://codebook.xanadu.ai/I.14}{four two-qubit Bell states}
+    \item A system where all qubits are in equal superposition
+    \item A three-qubit \href{https://github.com/qiskit-community/qiskit-community-tutorials/blob/master/Coding_With_Qiskit/ep5_Quantum_Teleportation.ipynb}{Quantum Teleportation} algorithm
+\end{itemize}
+
+\section{Activity 2: But How Does This Really Work?}
+
+After giving a brief lesson on Python programming with \href{https://www.ibm.com/quantum/qiskit}{Qiskit} and continuing to explain the basics of multiple-qubit quantum states, introduce \href{https://www.computer.org/csdl/proceedings-article/qce/2023/432302a373/1SuQKBiBjR6}{QNotation} to the students. Have the students use QNotation on their quantum systems while listing the information and quirks they find out about their systems by seeing them represented in different notations.
+
+Some points to look for are 
+\begin{itemize}
+    \item how phases are represented in each notation
+    \item the size difference of each notation
+    \item the intuitiveness of each notation (this will vary greatly based on the academic backgrounds of the students, but can lead to some interesting discussions)
+    \item how the number of qubits used maps to the dimensions of the matrices seen in matrix notation
+    \item the addition of identity matrices into operations
+\end{itemize}
+
+\section{Activity 3: Exploring Space with a Quantum Computer
+}
+
+If there are enough students taking the workshop, have the pairs get into groups of four and grab a copy of \href{https://entanglion.github.io}{Entanglion}. The board game will lead them through a collaborative experience where they have to interact with different quantum phenomena to win the game
+
+
+\end{document}
